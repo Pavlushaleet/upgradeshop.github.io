@@ -1,0 +1,508 @@
+/*https://habr.com/post/319280/*/
+/*https://webformyself.com/kak-verstat-katalog-tovarov/*/
+/*===Размер экрана в колледже = 1263px===*/
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background: white;
+}
+
+html, body, .wrapper {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body > .wrapper {height: auto; min-height: 100%;}
+
+img{
+	height: auto;
+	max-width: 100%;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+.container{
+	width: 99%;
+	margin: 0 auto;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+header{
+	display: inline-block;
+	background: #2f3640 no-repeat center top / cover;
+	width: 100%;
+}
+aside{
+	float: left;
+	width: 250px;
+}
+.content{
+	padding-bottom: 150px;
+}
+footer{
+	position: relative;
+	margin-top: -100px; 
+	height: 100px;
+	clear:both;
+	background: #2f3640 no-repeat center top / cover;
+	width: 100%;
+}
+.fab{
+	font-size: 23px;
+	position: relative;
+	top: 10%;
+	left: 48%;
+	padding-right: 25px;
+	color: white;
+}
+footer p{
+	padding-top: 10px;
+	position: absolute;
+	top: 30%;
+	left: 42.5%;
+	color: gray;
+	font-weight: normal;
+	font-family: "Arial";
+}
+footer a, i{
+	text-decoration: none;
+	font-weight:  normal;
+	font-style: normal;
+}
+.icons{
+	padding-top: 6px;
+	display: block;
+	height: 45px;
+	border-bottom: 1px solid gray;
+}
+/*======*/
+
+/*===Search===*/
+form {
+  position: absolute;
+  top: 9px;
+  right: 330px;
+  width: 55%;
+  margin: 0 auto;
+}
+input, button {
+  outline: none;
+  background: transparent;
+}
+input {
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  border: 1px solid green;
+  border-radius: 5px;
+  transition: .5s ease;
+  color: white;
+}
+button {
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  color: green;
+  line-height: 3em;
+  margin-left: 20px;
+  font-size: 15px;
+}
+input:hover{
+  border-color: white;
+}
+
+/*======*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.logo{
+	float: left;
+	padding: 20px;
+	width: 130px;
+	height: 28px;
+}
+
+.news{
+	display: block;
+	margin-top: 350px;
+	position: relative;
+	border: 1px solid #d8d8d8;
+	border-radius: 3px;
+	margin-left: 5px;
+	margin-bottom: 50px;
+}
+
+.news-post{
+	border-bottom: 1px solid #d8d8d8;
+}
+.news img {
+	height: 130px;
+	width: 223px;
+	margin: 7px;
+}
+
+.menu{
+	display: inline-block;
+	float: right;
+}
+
+
+.menu li{
+	float: left;
+	display: block;
+	line-height: 34px;
+	padding: 17px 0px;
+}
+
+
+.signlogin a{
+	color: #44bd32;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+.signlogin a:hover{
+	color: white;
+	background: #44bd32;
+}
+
+ .catalog{
+	margin: 0 auto;
+	float: left;
+	padding: 0;
+	height: auto;
+	position: relative;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.catalog a{
+	border-left: 3px solid #44bd32;
+	padding: 15px;
+	display: block;
+	border-top: none;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #44bd32;
+	font-size: 10.5px;
+
+    background: linear-gradient(to right, #44bd32 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 1s ease;
+}
+
+ .catalog a:hover{
+  	background-position:left bottom;
+  	color: white;
+  }
+
+.rec-catalog{
+	color: #7f8c8d;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #7f8c8d;
+	width: 73%;
+	text-transform: uppercase;
+	display: inline-block;
+	float: right;
+	position: relative;
+	right: 50px;
+}
+
+.products{
+	margin-top: 10px;
+	display: block;
+	width: 73%;
+	float: right;
+	position: relative;
+	list-style: none;
+	right: 50px;
+}
+
+
+
+.product-wrapper{
+	display: block;
+	width: 33.29%;
+	float: left;
+}
+.product {
+	display: block;
+	border: 1px solid #b5e9a7;
+	border-radius: 3px;
+	position: relative;
+	background: white;
+	margin: 0 20px 20px 0;
+	text-decoration: none;
+	color: #474747;
+	height: 420px;
+	transition: 0.5s ease;
+}
+
+.product h1 {
+	position: relative;
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.4em;
+	height: 7.5em;
+	border-bottom: 1px solid #ddd;
+	color: black;
+	font-weight: normal;
+	text-align: center;
+	overflow: hidden;
+}
+
+.product h1:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 4.2em;
+	height: 1.6em;
+}
+
+.price{
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	margin: 20px 0px 20px 0px;
+}
+.price li{
+	float: left;
+	display: block;
+	margin: 0px 20px;
+}
+
+.is-price{
+	overflow: hidden;
+	margin-right: 5px;
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+	float: left;
+	text-decoration: none;
+	line-height: 1.5em;
+}
+
+.button{
+	background: green;
+	color: white;
+	width: 95px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 3px;
+	text-decoration: none;
+	float: right;
+}
+
+/*.draw {
+    transition: color 0.25s;
+
+  &::before,
+  &::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+ &::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  &:hover {
+    color: $cyan;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover::before {
+    border-top-color: $cyan; 
+    border-right-color: $cyan;
+    transition:
+      width 0.25s ease-out,
+      height 0.25s ease-out 0.25s;
+  }
+
+  &:hover::after {
+    border-bottom-color: $cyan;
+    border-left-color: $cyan;
+    transition:
+      border-color 0s ease-out 0.5s,
+      width 0.25s ease-out 0.5s, 
+      height 0.25s ease-out 0.75s; 
+  }
+}*/
+
+/*===Медия запросы===*/
+@media only screen and (min-width: 450px) {
+	.product-wrapper {
+		width: 55%;
+	}.products{
+		left: 70px;
+		top: -340px;
+	}
+	.rec-catalog{
+		left: 70px;
+		top: -340px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.product-wrapper {
+		width: 40.333%;
+	}
+	.products{
+		left: 30px;	
+		top: -1130px;	
+	}
+	.rec-catalog{
+		left: 30px;
+		top: -1130px;
+	}
+	form{
+		width: 35%;
+	}
+	.price{
+		position: relative;
+		left: 20%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.product-wrapper {
+		width: 33%;
+	}
+	.products{
+		left: 30px;
+		top: 0;
+	}
+	.rec-catalog{
+		left: 30px;
+		top: 0;
+		width: 65%;
+	}
+	form{
+		width: 45%;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	.product-wrapper {
+		width: 33%;
+	}
+	.products{
+		left: -10px;
+		top: 0;
+	}
+	.rec-catalog{
+		left: -10px;
+		top: 0;
+		width: 73%;
+	}
+	.price{
+		position: absolute;
+		left: 20%;
+	}
+	form{
+		width: 55%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.product-wrapper {
+		width: 33%;
+	}
+	.products{
+		left: -50px;
+	}
+	.rec-catalog{
+		left: -50px;
+		width: 74%;
+	}
+	form{
+		width: 55%;
+	}
+	.price{
+		position: absolute;
+		left: 0%;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	.product-wrapper {
+		width: 33%;
+	}
+	.products{
+		left: -50px;
+	}
+	.rec-catalog{
+		left: -50px;
+		width: 74%;
+	}
+	form{
+		width: 55%;
+	}
+	.price{
+		position: relative;
+		top: -10px;
+		left: 25%;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.product-wrapper {
+		width: 33%;
+	}
+	.products{
+		left: -85px;
+	}
+	.rec-catalog{
+		left: -85px;
+		width: 74%;
+	}
+	form{
+		width: 55%;
+	}
+	.price{
+		position: relative;
+		top: 0%;
+		left: 0%;
+	}
+}

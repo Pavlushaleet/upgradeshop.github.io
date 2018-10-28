@@ -1,0 +1,13 @@
+html, body
+{
+	margin: 0;
+}
+div
+{
+	box-sizing: border-box;
+}
+.head
+{
+	background-color: #bdc3c7;
+	display: inline-block;
+}
